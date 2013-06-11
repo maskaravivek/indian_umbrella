@@ -1,0 +1,107 @@
+#p7{font-size:12px;text-align:right;margin:10px 30px;}
+
+.s14{border-right:1px solid grey;padding:0 10px;}
+
+.s14 a{text-decoration:none;color:black}
+
+#d4{border-bottom:2px solid black;}
+
+.d5{margin-top:20px;border-bottom:3px solid black;}
+
+.d6{border-bottom:2px solid black;}
+
+.d6 img{float:left;height:120px;width:90px;margin-bottom:10px;}
+
+.d6 h3{position:relative;top:15px}
+
+.d6 h5{text-align:center;color:rgb(49,140,261);}
+
+.p8{align:justify;margin:10px;font-size:14px;}
+
+#reading{
+	margin-top:20px;
+	width:44%;
+	float:left;
+	margin-left:10px;
+	margin-bottom:30px;
+	font-size:20px;
+	align:justify;
+}
+
+#reading h3{margin-left:5px;margin-bottom:0;border-bottom:2px solid black;}
+#comments1{
+	width:44%;
+	float:left;
+	margin-left:10px;
+	margin-bottom:30pc;
+	font-size:18px;
+	align:justify;
+}
+#comments1 hr{margin:5px 5px 5px 5px;color:grey;}
+#comments1 h3{margin-left:5px;margin-bottom:0;border-bottom:2px solid black;}
+
+.p9{
+	position:relative;
+	top:-20px;
+	font-size:14px;
+}
+
+
+#input{margin-left:12px;}
+
+#d7{float:right;height:100px;width:300px;position:relative;top:-140px;left:20px;}
+
+#close_debate{
+	font-family:"Times New Roman", Times, serif;
+	margin:auto auto 30px 50px;
+}
+
+#close_debate p span{
+	color:#FFF;
+	text-decoration:none;
+	font-size:20px;
+	padding:8px 8px;
+	background:#4479BA;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+#d8{
+	font-size:20px;
+	margin:30px 10px 20px 5%;
+	width:55%;
+	float:left;
+	align:justify;
+}
+
+#d8 h3{margin-left:10px;border-bottom:2px solid black;margin-right:20px;margin-bottom:10px;color:rgb( 49, 140, 231);}
+
+.p11{font-size:18px;margin-left:10px;margin-right:10px}
+
+#d9{
+	font-size:20px;
+	margin:30px 0 20px 20px;
+	width:30%;
+	float:left;
+	align:justify;
+}
+
+#d9 h3{margin-left:10px;border-bottom:2px solid black;margin-right:20px;margin-bottom:10px;color:rgb( 49, 140, 231);}
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+	text-align: center ;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    counter-increment: section-1;
+    counter-reset: section-2 section-3 section-4;
+}

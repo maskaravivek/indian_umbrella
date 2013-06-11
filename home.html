@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
+<link href="css/login.css" rel="stylesheet" />
+
+<link href="css/nav.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script>
+		  $(document).ready(function(){
+				$('#login-trigger').click(function(){
+					$(this).next('#login-content').slideToggle();
+					$(this).toggleClass('active');					
+					
+					if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+						else $(this).find('span').html('&#x25BC;')
+					})
+		  });
+	</script>
+
+
+<link rel="stylesheet" href="CSS/nivo-slider.css" media="screen">
+<script src="JS/jquery.min.js"></script>
+<script src="JS/jquery.nivo.slider.pack.js"></script>
+
+    
+
+	
+
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+    
+    <div id="logo"><img src="Images/logo.jpg" /></div>
+    <div id="header_right">
+    
+	<nav id="bar">
+	<ul>
+		<li id="login">
+			<a id="login-trigger" href="#">
+				Log in <span>&#x25BC;</span>
+			</a>
+			<div id="login-content">
+				<form>
+					<fieldset id="inputs">
+						<input id="username" type="email" name="Email" placeholder="Your email address" required>   
+						<input id="password" type="password" name="Password" placeholder="Password" required>
+					</fieldset>
+					<fieldset id="actions">
+						<input type="submit" id="submit" value="Log in">
+						<label><input type="checkbox" checked="checked"> Keep me signed in</label>
+					</fieldset>
+				</form>
+			</div>                     
+		</li>
+		<li id="signup">
+			<a href="sign_up.html">Sign up</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>		
+
+	<div class="clear"></div>
+    
+    
+    
+    <div id="wrap">
+		  <ul class="navbar">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href=#>DEBATE</a>
+			<ul>
+				<li><a href="current_debate.html">Current</a></li>
+				<li><a href="#">Upcoming</a></li>
+				<li><a href="archived.html">Archives</a></li>
+			</ul>
+			</li>
+            <li><a href=#>BLOG</a></li>
+            <li><a href=#>INTERVIEW</a></li>
+            <li><a href=#>CONFERENCE</a></li>
+            <li><a href="application_form.html">JOIN US</a></li>
+            <li><a href=#>CONTACT</a></li>
+        </ul>
+</div>
+
+	<div class="clear"></div>
+    
+    
+    <div class="slider-wrapper futurico-theme">
+ 
+    <div id="slider" class="nivoSlider">
+ 
+        <img src="images/logo.jpg">
+ 
+        <img src="images/mozilla.jpg">
+ 
+        <img src="images/logo.jpg">
+ 
+        <img src="images/mozilla.jpg">
+        
+
+
+ 
+    </div>
+ 
+	
+	
+    <div id="caption1" class="nivo-html-caption">
+        <strong>New Project</strong> <span></span> <em>Some description here</em>.
+    </div>
+     
+    <div id="caption3" class="nivo-html-caption">
+        <strong>Image 3</strong> <span></span> <em>Some description here</em>.
+    </div>
+
+
+	</div>
+	    
+    
+
+
+    
+    
+    <div id="d8">
+      	
+        	
+            <h3>About the Indian Umbrella</h3>
+            <div class="clear"></div>
+         	<p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            <p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           
+    </div>
+    
+    
+    <div id="d9">
+    
+    		<h3>News Feed</h3>
+            <div class="clear"></div>
+            <p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            <p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p11">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+          
+    </div>
+</div>
+
+
+
+<div id="footer">
+    	<center><ul><li class="foot"><a href="#">Terms of Use</a></li> <li class="foot"><a href="#"> Privacy </a></li> <li class="foot"><a href="#">Feedback</a></li><li class="foot"><a href="#"> Leagl Disclaimer</a></li><li class="foot"><a href="#"> Terms of use</a></li><li class="foot"><a href="#"> About</a></li><li class="foot"><a href="#"> Help</a></li></center>
+        <center>Copyrights @ The Indian Umbrella. All rights reserved.</center>
+</div>   
+
+	
+        <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+        });
+    });
+	</script>
+
+
+</body>
+</html>

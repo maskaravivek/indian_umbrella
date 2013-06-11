@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Current Debate</title>
+
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
+<link href="css/login.css" rel="stylesheet" />
+
+<link href="css/nav.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script>
+		  $(document).ready(function(){
+				$('#login-trigger').click(function(){
+					$(this).next('#login-content').slideToggle();
+					$(this).toggleClass('active');					
+					
+					if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+						else $(this).find('span').html('&#x25BC;')
+					})
+		  });
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+    
+    <div id="logo"><img src="Images/logo.jpg" /></div>
+   <div id="header_right">
+    
+	<nav id="bar">
+	<ul>
+		<li id="login">
+			<a id="login-trigger" href="#">
+				Log in <span>&#x25BC;</span>
+			</a>
+			<div id="login-content">
+				<form>
+					<fieldset id="inputs">
+						<input id="username" type="email" name="Email" placeholder="Your email address" required>   
+						<input id="password" type="password" name="Password" placeholder="Password" required>
+					</fieldset>
+					<fieldset id="actions">
+						<input type="submit" id="submit" value="Log in">
+						<label><input type="checkbox" checked="checked"> Keep me signed in</label>
+					</fieldset>
+				</form>
+			</div>                     
+		</li>
+		<li id="signup">
+			<a href="sign_up.html">Sign up</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+    <div class="clear"></div>
+    
+    
+    
+    <div id="wrap">
+		  <ul class="navbar">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href=#>DEBATE</a>
+			<ul>
+				<li><a href="current_debate.html">Current</a></li>
+				<li><a href="#">Upcoming</a></li>
+				<li><a href="archived.html">Archives</a></li>
+			</ul>
+			</li>
+            <li><a href=#>BLOG</a></li>
+            <li><a href=#>INTERVIEW</a></li>
+            <li><a href=#>CONFERENCE</a></li>
+            <li><a href="application_form.html">JOIN US</a></li>
+            <li><a href=#>CONTACT</a></li>
+        </ul>
+</div>
+
+	<div class="clear"></div>
+    
+    
+    
+    <div id="current_debate">
+    
+    <p>Current Debate</p>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div id="debate_topic">
+    	<div id="photo"><img src="Images/FDI.jpg" /></div>
+        <div id="topic">
+        	<div id="heading">
+            	<p id="p1">FDI</p>
+            	<p id="p2">Is FDI good for India?</p>
+            </div>
+            <div id="join_debate"><p><a href=#>Join this debate</a></p></div>
+            <div id="share" ><!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-51b4b6d71e959f7a" style="text-decoration:none;"><img src="http://s7.addthis.com/static/btn/sm-plus.gif"
+        width="16" height="16" border="0" alt="Share" /> Share</a> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b4b6d71e959f7a"></script>
+<!-- AddThis Button END -->
+            </div>
+        </div>
+        <div class="clear"></div>
+        <p id="debate_work"><a href="#">How the debate works</a></p>
+    </div>
+    
+    <div class="clear"></div>
+        
+    <div id="time_wrapper">
+        	<div id="upper">
+                <ul>
+                <li class="time_head"><div id="overview"><center>Overview</center></div></li>
+                <li class="time_head"><div><center>Opening</center></div></li>
+                <li id="rebuttal"><div><center>Rebuttal</center></div></li>
+                <li class="time_head"><div id="moz4"><center>Closing</center></div></li>
+                <li class="time_head"><div><center>Post Debate</center></div></li>
+                </ul>
+            </div>
+            <div id="lower">
+            	<ul>
+                <li class="time_bot"><a href=#><div id="overview_bot"><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Statements</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li id="rebuttal_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a>
+                					  <a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1" style="float:left">Day</span><span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Winner:Name</span></div></a></li>
+				</ul>
+            </div>
+    </div>
+    
+    
+    <div class="clear"></div>
+    
+    
+    
+    <div style="margin-bottom:20px;" id="voting_sides">
+     	<h3>Do you agree with the motion?</h3>
+        <div id="vote">
+        	<div id="percent"><center><span id="s3">73%</center></span></div>
+            <div id="agree"><center><p id="s4">If you agree</p></center>
+            						<div><center><span id="s5"><a href=#>Vote yes</a></span></center></div>
+            </div>
+      	</div>
+        
+        <div id="vote">
+        	<div id="percent"><center><span id="s3">27%</center></span></div>
+            <div id="agree"><center><p id="s4">If you disagree</p></center>
+            						<div><center><span id="s5"><a href=#>Vote no</a></span></center></div>
+            </div>
+      	</div>
+        
+        <div id="clear"></div>
+
+ 		<h3 style="margin-top:30px">Representing the sides</h3>
+      <div style="border-bottom:4px solid black;">  
+        <div id="defend" style="margin-bottom:20px">
+           <div id="d3">
+        	<img src="Images/d127_mcafee_sm0.jpg" />
+            <h4><center>Defending the<br /> motion</center></h4>
+            <div class="clear"></div>
+           </div>
+            <h5>Defender's Name</h5>
+            <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+        </div>
+		
+        <div id="defend" style="margin-bottom:20px">
+           <div id="d3">
+        	<img src="Images/d127_mcafee_sm0.jpg" />
+            <h4><center>Against the<br /> motion</center></h4>
+            <div class="clear"></div>
+          </div>  
+            <h5>Con's Name</h5>
+            <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+       
+      <div id="d4">
+      	<p id="p7"><span class="s14"><a href="#pro">Pro</a></span><span class="s14"><a href="#con">Con</a></span><span class="s14"><a href="moderator"#>Moderator</a></span></p>
+      
+      </div> 
+        
+      <div class="d5">
+      	<div class="d6">
+        	<img src="Images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="moderator">The Moderator's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Moderator's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           
+      </div>
+      
+      <div class="clear"></div>
+      
+      <div class="d5">
+      	<div class="d6">
+        	<img src="Images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="pro">The Proposer's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Proposer's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+      </div>
+      
+      
+      <div class="clear"></div>
+      
+      <div class="d5">
+      	<div class="d6">
+        	<img src="Images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="con">The Opposition's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Opposition's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+      </div>
+      
+      <div class="clear"></div>
+      
+   </div>
+   
+   
+   <div id="reading">
+   		<h3>Background Reading</h3>
+  		<p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        
+    </div>
+    
+    
+    <div id="comments1">
+    	<h3>Comments from the floor</h3>
+        <p id="p6"><span id="s9"><a href="#textarea">Add your view</a></span></p>
+        
+       <hr />
+        <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        
+        <hr />
+                <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        <hr />
+                <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        <hr />
+        <form>
+        <a name="textarea"><textarea id="input" cols=55 rows=12 /></textarea></a>
+        </form>
+        
+        <p style="float:right" id="p6"><span id="s9"><a href="#">Submit</a></span></p>
+    </div>     
+        
+    <div class="clear"></div>
+
+   
+    
+    
+    
+</div>
+
+
+
+
+
+<div id="footer">
+    	<center><ul><li class="foot"><a href="#">Terms of Use</a></li> <li class="foot"><a href="#"> Privacy </a></li> <li class="foot"><a href="#">Feedback</a></li><li class="foot"><a href="#"> Leagl Disclaimer</a></li><li class="foot"><a href="#"> Terms of use</a></li><li class="foot"><a href="#"> About</a></li><li class="foot"><a href="#"> Help</a></li></center>
+        <center>Copyrights @ The Indian Umbrella. All rights reserved.</center>
+</div>   
+
+</body>
+</html>
