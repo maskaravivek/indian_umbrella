@@ -1,0 +1,68 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-
+- phpMyAdmin XML Dump
+- version 2.11.4
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Jun 15, 2013 at 11:22 AM
+- Server version: 5.1.57
+- PHP Version: 5.2.17
+-->
+
+<!--
+- Database: 'a6158264_test1'
+-->
+<a6158264_test1>
+  <!-- Table debates -->
+    <debates>
+        <id>1</id>
+        <issue>Big Banks</issue>
+        <start_date>2013-06-13 00:00:00</start_date>
+        <end_date>2013-06-17 00:00:00</end_date>
+        <moderator_id>4</moderator_id>
+        <proposition_id>7</proposition_id>
+        <opposition_id>12</opposition_id>
+        <description>Should big banks be allowed?</description>
+        <status>1</status>
+        <winner>not decided</winner>
+    </debates>
+    <debates>
+        <id>2</id>
+        <issue>FDI</issue>
+        <start_date>2013-06-13 00:00:00</start_date>
+        <end_date>2013-06-17 00:00:00</end_date>
+        <moderator_id>6</moderator_id>
+        <proposition_id>32</proposition_id>
+        <opposition_id>123</opposition_id>
+        <description>Fdi in retail? Should it be allowed</description>
+        <status>2</status>
+        <winner>not decided</winner>
+    </debates>
+    <debates>
+        <id>3</id>
+        <issue>Technological progress</issue>
+        <start_date>2013-06-15 00:00:00</start_date>
+        <end_date>2013-06-19 00:00:00</end_date>
+        <moderator_id>31</moderator_id>
+        <proposition_id>56</proposition_id>
+        <opposition_id>122</opposition_id>
+        <description>Is technological progress accelerating?</description>
+        <status>3</status>
+        <winner>opposition</winner>
+    </debates>
+    <debates>
+        <id>4</id>
+        <issue>Germany's role in Europe</issue>
+        <start_date>2013-06-14 00:00:00</start_date>
+        <end_date>2013-06-19 00:00:00</end_date>
+        <moderator_id>31</moderator_id>
+        <proposition_id>56</proposition_id>
+        <opposition_id>123</opposition_id>
+        <description>Has Europe suffered from a lack of German leadership during the euro crisis?</description>
+        <status>1</status>
+        <winner>not decided</winner>
+    </debates>
+</a6158264_test1>

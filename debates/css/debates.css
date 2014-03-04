@@ -1,0 +1,55 @@
+#left{
+	width:65%;
+	float:left;
+	padding-right:1px;
+}
+
+#right{
+	width:35%;
+	float:left;
+padding-left:1px;
+	}
+
+.debate_ongoing{margin:5px 5px 5px 5%;}
+
+.debate_ongoing h2{font-size:30px;}
+
+.pro_con p{
+	font-size:20px;
+	font-weight:400;
+	margin-bottom:10px;
+}
+
+.leftside{
+	width:45%;
+	float:left;
+	margin-left:5%;
+}
+
+.rightside{
+	width:45%;
+	float:left;
+}
+
+.p15{
+	background-color: #4479ba;
+	border-top:
+	font-size:20px;
+	margin:0;
+	height:25px;
+	display:block;
+	text-decoration:none;
+	color:white;
+	text-align:center;
+	width:300px;
+}
+
+
+
+.p15:hover{background-color: #20538d;}
+	
+#debate_archive{
+	float:left;
+	width:300px;
+	margin:30px 5%;
+}

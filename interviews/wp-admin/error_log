@@ -1,0 +1,1 @@
+[13-Aug-2013 11:10:59] WordPress database error MySQL server has gone away for query SELECT autoload FROM in_options WHERE option_name = '_site_transient_update_plugins' made by Plugin_Upgrader->install, delete_site_transient, delete_site_option, delete_option
