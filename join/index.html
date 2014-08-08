@@ -1,0 +1,350 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>The Indian Umbrella</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/stimenu.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Wire+One&v1' rel='stylesheet' type='text/css' />
+		<link rel="shortcut icon" href="http://devilsnarewp7.com/vg/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../debates/css/style_index.css" type="text/css" media="screen"/>
+		<script src="../debates/js/cufon-yui.js" type="text/javascript"></script>
+		<script src="../debates/js/Aller.font.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../debates/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../debates/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../debates/css/subscribe.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<script src="../debates/js/jquery.classysocial.js"></script>
+<link rel="stylesheet" type="text/css" href="../debates/css/jquery.classysocial.css" />
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+	google.load('jquery', '1.4.1');
+</script>
+
+<script type="text/javascript">
+var q=$.noConflict();
+q(document).ready(function(){
+	q('#newsletter-signup').submit(function(){
+		
+		//check the form is not currently submitting
+		if(q(this).data('formstatus') !== 'submitting'){
+		
+			//setup variables
+			var form = q(this),
+				formData = form.serialize(),
+				formUrl = form.attr('action'),
+				formMethod = form.attr('method'), 
+				responseMsg = q('#signup-response');
+			
+			//add status data to form
+			form.data('formstatus','submitting');
+			
+			//show response message - waiting
+			responseMsg.hide()
+					   .addClass('response-waiting')
+					   .text('Please Wait...')
+					   .fadeIn(200);
+			
+			//send data to server for validation
+			q.ajax({
+				url: formUrl,
+				type: formMethod,
+				data: formData,
+				success:function(data){
+					
+					//setup variables
+					var responseData = jQuery.parseJSON(data), 
+						klass = '';
+					
+					//response conditional
+					switch(responseData.status){
+						case 'error':
+							klass = 'response-error';
+						break;
+						case 'success':
+							klass = 'response-success';
+						break;	
+					}
+					
+					//show reponse message
+					responseMsg.fadeOut(200,function(){
+						q(this).removeClass('response-waiting')
+							   .addClass(klass)
+							   .text(responseData.message)
+							   .fadeIn(200,function(){
+								   //set timeout to hide response message
+								   setTimeout(function(){
+									   responseMsg.fadeOut(200,function(){
+									       q(this).removeClass(klass);
+										   form.data('formstatus','idle');
+									   });
+								   },3000)
+								});
+					});
+				}
+			});
+		}
+		
+		//prevent form from submitting
+		return false;
+	});
+});
+</script>
+		<script src="../debates/js/modernizr.custom.js"></script>
+		<script src="../debates/js/modernizr.custom1.js"></script>
+		<script type="text/javascript">
+			Cufon.replace('ul.oe_menu div a',{hover: true});
+			Cufon.replace('h1,h2,.oe_heading');
+		</script>
+		
+        <style type="text/css">
+			span.reference{
+				position:fixed;
+				left:0px;
+				bottom:0px;
+				background:#000;
+				width:100%;
+				font-size:10px;
+				line-height:20px;
+				text-align:right;
+				height:20px;
+				-moz-box-shadow:-1px 0px 10px #000;
+				-webkit-box-shadow:-1px 0px 10px #000;
+				box-shadow:-1px 0px 10px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				margin-right:10px;
+				
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			.bg_img img{
+				width:100%;
+				position:fixed;
+				top:0px;
+				left:0px;
+				z-index:-1;
+			}
+			h1{
+				font-size:64px;
+				text-align:right;
+				position:absolute;
+				right:40px;
+				top:20px;
+				font-weight:normal;
+				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
+			*/}
+			#logo_index span{
+				display:block;
+				font-size:22px;
+				position:absolute;
+				right:20px;
+			}
+			
+#logo_index{
+	font-size:84px;
+	font-weight:normal;
+	text-decoration:none;
+	text-shadow:3px 3px 5px #000000;
+	font-family: 'Arizonia', cursive;
+	line-height:50px;
+	margin-top:50px;
+	margin-right:15px;
+	float:right;
+	text-transform:none; 
+}
+		</style>
+    </head>
+
+    <body>
+
+		<div class="bg_img"><img style="opacity:0.3;" src="../debates/images/bg1.jpg" alt="background" /></div>
+		<p id="logo_index">The Indian Umbrella</p>
+		
+
+		<div class="oe_wrapper" style="float:left;">
+			<div id="oe_overlay" class="oe_overlay"></div>
+			<ul id="oe_menu" class="oe_menu">
+				<li><a style="font-size:17px;" href="../debates/index.php">Debates</a>
+				</li>
+				<li><a style="font-size:15px;" href="../perspectives/index.php">Perspectives</a>
+				</li>
+				<li><a style="font-size:17px;" href="../interviews/index.php">Interviews</a>
+				</li>
+				
+			</ul>
+		
+		</div>
+		<div class="container" style="text-transform:none;">
+			<ul id="sti-menu" class="sti-menu">
+				<li data-hovercolor="#37c5e9">
+					<a href="application_form.php">
+						<h2 data-type="mText" style="font-size:1.0em" class="sti-item">Lead Debaters</h2>
+						<h3 data-type="sText" class="sti-item">Devise and test new debating models</h3>
+						<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ff395e">
+					<a href="apply_marketing.php">
+						<h2 data-type="mText" style="font-size:1.0em" class="sti-item">Marketing</h2>
+						<h3 data-type="sText" class="sti-item">Generate sponsorship</h3>
+						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#57e676">
+					<a href="apply_pr.php">
+						<h2 data-type="mText" style="font-size:1.0em" class="sti-item">Public Relations</h2>
+						<h3 data-type="sText" class="sti-item">Pre event and post event publicity</h3>
+						<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#d869b2">
+					<a href="apply_ca.php">
+						<h2 data-type="mText" style="font-size:1.0em" class="sti-item">Campus Ambassadors</h2>
+						<h3 data-type="sText" class="sti-item">Represent us on campus</h3>
+						<span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ffdd3f">
+					<a href="#">
+						<h2 data-type="mText" style="font-size:1.0em" class="sti-item">Web Creation</h2>
+						<h3 data-type="sText" class="sti-item">Work with the technical team</h3>
+						<span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+					</a>
+				</li>
+			</ul>
+			
+			
+		</div>
+		<div id="footer" style="float:left;width:100%;position:absolute;margin-top:475px;margin-left:75px;">
+		<div style="float:left;" class="classysocial" data-picture="../debates/images/share_core_square.jpg" data-google-handle="104590234648482562614" data-facebook-handle="theindianumbrella" data-twitter-handle="indianumbrella" data-email-handle="theindianumbrella@gmail.com" data-networks="facebook,twitter,google,email"></div>
+
+		</div>
+		<div class="container1">
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+			<h3 style="margin-top:-15px;"><a href="index.html">Join Us</a></h3>
+			<a href="" class="link_style" style="width:58%;">© 2013 The Indian Umbrella</a>
+			<a href="#" class="link_style" id="showBottom">More</a>
+			<a href="#" class="link_style" >Terms of use</a>
+			<a href="#" class="link_style">Privacy Policy</a>
+			<a href="#" class="link_style">Legal disclaimer</a>
+			<a href="#" class="link_style">Help</a>
+		</nav></div>
+        <!-- The JavaScript -->
+		<script>
+                                    $(document).ready(function() {
+                                        $(".classysocial").each(function() {
+                                            new ClassySocial(this);
+                                        });
+                                    });
+                                </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				var $oe_overlay		= $('#oe_overlay');
+
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
+
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+					$oe_overlay.stop(true,true).fadeTo(200, 0.6);
+					$this.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('hovered');
+					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					$oe_menu_items.children('div').hide();
+				})
+            });
+        </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../debates/js/jquery.cbpQTRotator.min.js"></script>
+		<script>
+		var m=$.noConflict();
+			m( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpQTRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).cbpQTRotator( 'destroy' );
+				*/
+
+				m( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
+		</script>
+		<script src="../debates/js/classie.js"></script>
+		<script>
+				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+				showBottom = document.getElementById( 'showBottom' ),
+				body = document.body;
+
+			
+			showBottom.onclick = function() {
+
+				classie.toggle( this, 'active' );
+				classie.toggle( menuBottom, 'cbp-spmenu-open' );
+				disableOther( 'showBottom' );
+				var elem = document.getElementById("showBottom");
+				if (elem.innerHTML=="More") elem.innerHTML = "Less";
+				else elem.innerHTML = "More";
+			};
+			
+
+			function disableOther( button ) {
+				
+				if( button !== 'showBottom' ) {
+					classie.toggle( showBottom, 'disabled' );
+				}
+				
+			}
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#sti-menu').iconmenu({
+					animMouseenter	: {
+						'mText' : {speed : 400, easing : 'easeOutBack', delay : 200, dir : -1},
+						'sText' : {speed : 400, easing : 'easeOutBack', delay : 400, dir : -1},
+						'icon'  : {speed : 400, easing : 'easeOutBack', delay : 0, dir : -1}
+					},
+					animMouseleave	: {
+						'mText' : {speed : 200, easing : 'easeInExpo', delay : 150, dir : 1},
+						'sText' : {speed : 200, easing : 'easeInExpo', delay : 300, dir : 1},
+						'icon'  : {speed : 200, easing : 'easeInExpo', delay : 0, dir : 1}
+					}
+				});
+			});
+		</script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+.main{height:110px;width:620px;background-color:#f5f5f5;margin:20px}
+.boxed{height:110px;width:410px;float:left;}
+.pro,.con{height:100px;width:100px;float:right;}
+.pro_img,.con_img{height:80px;padding:3px}
+.box1{height:104px;width:100px;float:left;padding:2px;border:1px dashed black;}
+.pub{padding:5px;}
+.up
+{
+height:40px; 
+font-size:24px; 
+text-align:center;
+background-color:#556B2F; 
+margin-bottom:2px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+.down
+{
+height:40px; 
+font-size:24px; 
+text-align:center; 
+background-color:#B22222;
+margin-top:2px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+.box2{height:80px;width:300px;float:right;float:left;}
+.status{height:30px;width:280px;float:left;padding:5px}
+.topic{height:30px;width:300px;font-size:20px;float:left;padding:5px}
+.description{height:50px;width:300px;float:left;padding:3px}

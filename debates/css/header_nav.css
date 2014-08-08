@@ -1,0 +1,167 @@
+.ct-header {
+	background:#222;
+	position:relative;
+	z-index:999;
+	padding: 0px 0;
+}
+.ct-inner{
+	padding:0px 0px 0px 20px;
+	position:relative;
+}
+.ct-inner{
+	padding: 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.ct-nav-wrapper{
+	float:left;
+	margin: 22px 0 0 20px;
+}
+.ct-nav-main{
+	float:left;
+}
+.ct-nav-main ul{
+	float:left;
+	display:block;
+	font-size:22px;
+}
+.ct-nav-main ul li{
+	display:inline;
+	color:#237dac;
+}
+.ct-nav-main ul li a{
+	color: #fff;
+	margin: 0 14px 0 10px;
+}
+.ct-nav-main ul li a:hover{
+	color:#056495;
+}
+.ct-nav-main ul li:last-child:after{
+	content: "";
+}
+.ct-nav-main ul li a {
+	white-space: nowrap;
+}
+.ct-header-items-right {
+	float: right;
+	width: 320px;
+}
+.ct-connect{
+	width: 252px;
+	float: right;
+	margin: -5px 24px 0 0;
+	padding: 0px;
+	height: 50px;
+}
+.ct-connect li{
+	float: left;
+}
+.ct-connect li a{
+	display: block;
+	width: 48px;
+	height: 48px;
+	line-height: 50px;
+	outline: none;
+	margin: 0 1px;
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+.ct-connect li a span {
+	display: none;
+}
+.ct-connect li a:before,
+.ct-icon-info:before {
+	font-family: 'codrops-social';
+	font-size: 18px;
+	line-height: 40px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.ct-connect li a:hover:before {
+	color: #056495;
+}
+.ct-icon-google-plus:before {
+	content: "\e001";
+}
+.ct-icon-facebook:before {
+	content: "\e002";
+}
+
+.ct-icon-twitter:before {
+	content: "\e000";
+}
+
+.ct-icon-search:before {
+	content: "\e006";
+	font-size: 20px;
+}
+.ct-footer .ct-inner{
+	padding: 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ct-footer {
+	position: relative;
+	width: 100%;
+	bottom: 0px;
+	padding: 40px 0;
+	background: #222;
+}
+.ct-footer .ct-inner{
+	padding: 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ct-footer nav {
+	float: left;
+	width: 600px;
+}
+.ct-footer ul {
+	float: left;
+	width: 25%;
+}
+.ct-footer ul li{
+	display: block;
+	line-height: 25px;
+}
+.ct-footer ul li a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration:none;
+	white-space: nowrap;
+}
+.ct-footer ul li a:hover{
+	color: #056495;
+}
+.ct-items {
+	float: right;
+	width: 355px;
+	text-align: left;
+}
+.ct-item {
+	float: left;
+	clear: none;
+	margin: 30px 0 0 0;
+}
+.ct-item span{
+	font-size: 13px;
+	color: #237dac;
+}
+
+#logo_index{
+	font-size:64px;
+	color:#fff;
+	font-weight:normal;
+	text-decoration:none;
+	text-shadow:3px 3px 5px #000000;
+	font-family: 'Arizonia', cursive;
+	line-height:50px;
+	
+	text-transform:none;

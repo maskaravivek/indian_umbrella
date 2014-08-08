@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Debate</title>
+
+<link href="style.css" rel="stylesheet" />
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jq1.js"></script>
+	  <script type="text/javascript" src="js/jquery.easyAccordion.js"></script>
+      <script type="text/javascript" src="js/utility.js"></script>
+<style type="text/css">
+	 /*
+		  html{font-size:62.5%}
+		  body{font-size:1.2em;color:#294f88}
+		  h1{margin:0 0 20px 0;padding:0;font-size:2em;}
+		  h2{margin:40px 0 20px 0;padding:0;font-size:1.6em;}
+		  p{font-size:1.2em;line-height:170%;margin-bottom:20px}
+		*/  		  
+		 
+		/* UNLESS YOU KNOW WHAT YOU'RE DOING, DO NOT CHANGE THE FOLLOWING RULES */
+		.easy-accordion h2{margin:0px 0 20px 0;padding:0;font-size:1.6em;}
+		.easy-accordion{display:block;position:relative;overflow:hidden;padding:0;margin:0}
+		.easy-accordion dt,.easy-accordion dd{margin:0;padding:0}
+		.easy-accordion dt,.easy-accordion dd{position:absolute}
+		.easy-accordion dt{margin-bottom:0;margin-left:0;z-index:5;/* Safari */ -webkit-transform: rotate(-90deg); /* Firefox */ -moz-transform: rotate(-90deg);-moz-transform-origin: 20px 0px;  /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);cursor:pointer;}
+		.easy-accordion dd{z-index:1;opacity:0;overflow:hidden}
+		.easy-accordion dd.active{opacity:1;}
+		.easy-accordion dd.no-more-active{z-index:2;opacity:1}
+		.easy-accordion dd.active{z-index:3}
+		.easy-accordion dd.plus{z-index:4}
+		.easy-accordion .slide-number{position:absolute;bottom:0;left:10px;font-weight:normal;font-size:1.1em;/* Safari */ -webkit-transform: rotate(90deg); /* Firefox */ -moz-transform: rotate(90deg);  /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+		 
+		/* FEEL FREE TO CUSTOMIZE THE FOLLOWING RULES */
+		#wrapper{z-index:50}
+		dd p{line-height:120%}
+		#recentcomments{font-size:14px}
+		#accordion-1{float:right;width:600px;height:150px;background:#fff; margin-right:50px}
+		#accordion-1 dl{width:600px;height:160px}	
+		#accordion-1 dt{height:46px;line-height:44px;text-align:right;padding:0 15px 0 0;font-size:0.8em;font-weight:bold;font-family: Tahoma, Geneva, sans-serif;text-transform:uppercase;letter-spacing:1px;background:#fff url(images/slide-title-inactive-1.jpg) 0 0 no-repeat;color:#26526c}
+		#accordion-1 dt.active{cursor:pointer;color:#fff;background:#fff url(images/slide-title-active-1.jpg) 0 0 no-repeat}
+		#accordion-1 dt.hover{color:#68889b;}
+		#accordion-1 dt.active.hover{color:#fff}
+		#accordion-1 dd{padding:25px;background:url(images/slide.jpg) bottom left repeat-x;border:1px solid #dbe9ea;border-left:0;margin-right:3px}
+		#accordion-1 .slide-number{color:#68889b;left:10px;font-weight:bold}
+		#accordion-1 .active .slide-number{color:#fff;}
+		#accordion-1 a{color:#68889b}
+		#accordion-1 dd img{float:right;margin:0 0 0 30px;}
+		#accordion-1 h2{font-size:2.5em;margin-top:10px}
+		#accordion-1 .more{padding-top:10px;display:block}
+			
+		
+
+      </style>
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+    
+    <div id="logo"><img src="images/logo.png" /></div>
+    <div id="accordion-1">
+            <dl>
+                <dt>About</dt>
+                <dd><h4>The Indian Umbrella is so and so</h4><br><a href="#" class="more">Read more</a></p></dd>
+                <dt>Debates</dt>
+                <dd><h4>Check out whats going on</h4><br><a href="#" class="more">Upcoming debates</a></p></dd>
+                <dt>Blogs</dt>
+                <dd><h4>Visit our blogs</h4><br><a href="#" class="more">Read more</a></p></dd>
+                <dt>Interviews</dt>
+                <dd><h4>See who we have got this week for you</h4><br /><a href="#" class="more">Read more</a></p></dd>
+                <dt>Conferences</dt>
+                <dd><h4>Our latest conferences</h4><br /><a href="#" class="more">Read more</a></p></dd>
+                <dt>Join Us</dt>
+                <dd><h4>Check what we are up to..</h4><br /><a href="#" class="more">Read more</a></p></dd>
+				
+			</dl>
+        </div>				
+
+	<div class="clear"></div>
+    
+    
+    
+    <div id="current_debate">
+    
+    <p>Archived Debate</p>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div id="debate_topic">
+    	<div id="photo"><img src="images/FDI.jpg" /></div>
+        <div id="topic">
+        	<div id="heading">
+            	<p id="p1">FDI</p>
+            	<p id="p2">Is FDI good for India?</p>
+            </div>
+            <div id="share" ><!-- AddThis Button BEGIN -->
+<a width="16" height="16" border="0" alt="Share" /> Share</a> 
+<!-- AddThis Button END -->
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    
+    <div class="clear"></div>
+        
+    <div id="time_wrapper">
+        	<div id="upper">
+                <ul>
+                <li class="time_head"><div id="overview"><center>Overview</center></div></li>
+                <li class="time_head"><div><center>Opening</center></div></li>
+                <li id="rebuttal"><div><center>Rebuttal</center></div></li>
+                <li class="time_head"><div id="moz4"><center>Closing</center></div></li>
+                <li class="time_head"><div><center>Post Debate</center></div></li>
+                </ul>
+            </div>
+            <div id="lower">
+            	<ul>
+                <li class="time_bot"><a href=#><div id="overview_bot"><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Statements</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li id="rebuttal_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a>
+                					  <a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1" style="float:left">Day</span><span class="s2">Date</span><span class="s15">Comments</span></div></a></li>
+                <li class="time_bot"><a href=#><div><span class="s1">Day</span> <span class="s2">Date</span><span class="s15">Winner:Name</span></div></a></li>
+				</ul>
+            </div>
+    </div>
+    
+    
+    <div class="clear"></div>
+    
+    
+    
+    <div style="margin-bottom:20px;" id="voting_sides">
+     	<h3>Do you agree with the motion?</h3>
+        <div id="vote">
+        	<div id="percent"><center><span id="s3">75%</center></span></div>
+            <div id="agree"><center><p id="s4">Voted <br />YES</p></center>
+            						
+            </div>
+      	</div>
+        
+        <div id="vote">
+        	<div id="percent"><center><span id="s3">25%</center></span></div>
+            <div id="agree" style="top:10px"><center><p id="s4">Voted<br /> NO</p></center>
+            						
+            </div>
+      	</div>
+        
+        <div id="clear"></div>
+
+ 		<h3 style="margin-top:30px">Representing the sides</h3>
+      <div style="border-bottom:2px solid black;">  
+        <div id="defend" style="margin-bottom:20px">
+           <div id="d3">
+        	<img src="images/d127_mcafee_sm0.jpg" />
+            <h4><center>Defending the<br /> motion</center></h4>
+            <div class="clear"></div>
+           </div>
+            <h5>Defender's Name</h5>
+            <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+        </div>
+		
+        <div id="defend" style="margin-bottom:20px">
+           <div id="d3">
+        	<img src="images/d127_mcafee_sm0.jpg" />
+            <h4><center>Against the<br /> motion</center></h4>
+            <div class="clear"></div>
+          </div>  
+            <h5>Con's Name</h5>
+            <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+       
+      <div id="d4">
+      	<p id="p7"><span class="s14"><a href="#pro">Pro</a></span><span class="s14"><a href="#con">Con</a></span><span class="s14"><a href="moderator"#>Moderator</a></span></p>
+      
+      </div> 
+        
+      <div class="d5">
+      	<div class="d6">
+        	<img src="images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="moderator">The Moderator's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Moderator's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           
+      </div>
+      
+      <div class="clear"></div>
+      
+      <div class="d5">
+      	<div class="d6">
+        	<img src="images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="pro">The Proposer's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Proposer's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+      </div>
+      
+      
+      <div class="clear"></div>
+      
+      <div class="d5">
+      	<div class="d6">
+        	<img src="images/d127_mcafee_sm0.jpg" />
+            <h3 style="border:0"><center><a name="con">The Opposition's<br /> Remarks</a></center></h3>
+             <br />
+            <h5>Opposition's Name</h5>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="clear"></div>
+            <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+           <p class="p8">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+            
+      </div>
+      
+      <div class="clear"></div>
+      
+   </div>
+   
+   
+   <div id="reading">
+   		<h3>Background Reading</h3>
+  		<p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        <p class="p1">Some Description  <span class="s6"><a href=#>www.link.com</a></span></p>
+        
+    </div>
+    
+    
+    <div id="comments1">
+    	<h3>Comments from the floor</h3>
+        
+       
+        <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        
+        <hr />
+                <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        <hr />
+                <p class="p2">Date and Time of comment</p><br /><br />
+        <p class="p3"><span class="s11">Username </span>wrote:</p>
+        
+        <p class="p9">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
+        
+        
+        <hr />
+        
+    </div>     
+        
+    <div class="clear"></div>
+
+   
+    
+    
+    
+</div>
+
+
+
+
+<div id="footer">
+<div class="wrapper">
+					<ul id="icons">
+						<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon2.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Stumble Upon"><img src="images/icon3.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon4.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon5.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Reddit"><img src="images/icon6.png" alt=""></a></li>
+					</ul>
+				</div>
+    	<center>Copyrights @ The Indian Umbrella 2013 <br />* <a href=#>About</a> * <a href=#>Privacy</a> * <a href=#>Terms of use</a> * <a href=#>Legal Disclaimer</a> * <a href=#>Help</a> *  
+</div>   
+
+</body>
+</html>
